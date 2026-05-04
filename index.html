@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css" />
+    <title>Document</title>
+</head>
+<body>
+    <div id="openn" onclick="openn()">
+        <P id="openn1">煎蛋增量</P> 
+    </div>
+    <div id="floor">
+        <div class="flor" style="--i:0" onclick="scene_change(1)"><p class="fp" style="--i:2">煎蛋</p></div>
+        <div class="flor" style="--i:1" onclick="scene_change(2)"><p class="fp"style="--i:5">半透明煎蛋</p></div>
+        <div class="flor" style="--i:2" onclick="scene_change(3)"><p class="fp"style="--i:3">煎蛋神</p></div>
+        <div class="flor" style="--i:3" onclick="scene_change(4)"><p class="fp"style="--i:5">煎蛋模拟器</p></div>
+        <div class="flor" style="--i:4" onclick="scene_change(5)"><p class="fp"style="--i:2">现实</p></div>
+    </div>
+    <div id="egg_show"></div>
+    <div id="scene1" class="scene" style="display: block;">
+        <div id="egg_erea">
+            <div id="egg_maker"><div id="egg_maker_show"></div>
+            <div id="egg_maker_buy"><div style="margin-left: 3px;" onclick="egg_maker_buying()">购买</div></div>
+            <div id="egg_maker_autobuyer"></div></div>
+            <div id="egg_boost"><div id="egg_boost_show"></div>
+            <div id="egg_boost_buy"><div style="margin-left: 3px;" onclick="egg_boost_buying()">购买</div></div>
+            <div id="egg_boost_autobuyer"></div></div>
+            <p id="nnnnname">煎蛋升级</p>
+            <div id="egg_upgrade">
+                <div id="ep1" class="egg_upgrade" style="--x:0; --y:0;" onclick="egg_upgrade_buying(1)"><p class="anname">Gly</p><p id="gly" class="egg_upgrade_des"></p></div>
+                <div id="ep2" class="egg_upgrade" style="--x:1; --y:0;" onclick="egg_upgrade_buying(2)"><p class="anname">Ala</p><p id="ala" class="egg_upgrade_des"></p></div>
+                <div id="ep3" class="egg_upgrade" style="--x:2; --y:0;" onclick="egg_upgrade_buying(3)"><p class="anname">Val</p><p class="egg_upgrade_des"></p></div>
+                <div id="ep4" class="egg_upgrade" style="--x:3; --y:0;" onclick="egg_upgrade_buying(4)"><p class="anname">Leu</p><p class="egg_upgrade_des"></p></div>
+                <div id="ep5" class="egg_upgrade" style="--x:4; --y:0;" onclick="egg_upgrade_buying(5)"><p class="anname">Ile</p><p class="egg_upgrade_des"></p></div>
+                <div id="ep6" class="egg_upgrade" style="--x:0; --y:1;" onclick="egg_upgrade_buying(6)"><p class="anname">Phe</p><p class="egg_upgrade_des"></p></div>
+                <div id="ep7" class="egg_upgrade" style="--x:1; --y:1;" onclick="egg_upgrade_buying(7)"><p class="anname">Trp</p><p class="egg_upgrade_des"></p></div>
+                <div id="ep8" class="egg_upgrade" style="--x:2; --y:1;" onclick="egg_upgrade_buying(8)"><p class="anname">Tyr</p><p class="egg_upgrade_des"></p></div>
+                <div id="ep9" class="egg_upgrade" style="--x:3; --y:1;" onclick="egg_upgrade_buying(9)"><p class="anname">Asp</p><p class="egg_upgrade_des"></p></div>
+                <div id="ep10" class="egg_upgrade" style="--x:4; --y:1;" onclick="egg_upgrade_buying(10)"><p class="anname">Asn</p><p class="egg_upgrade_des"></p></div>
+                <div id="ep11" class="egg_upgrade" style="--x:0; --y:2;" onclick="egg_upgrade_buying(11)"><p class="anname">Glu</p><p class="egg_upgrade_des"></p></div>
+                <div id="ep12" class="egg_upgrade" style="--x:1; --y:2;" onclick="egg_upgrade_buying(12)"><p class="anname">Lys</p><p class="egg_upgrade_des"></p></div>
+                <div id="ep13" class="egg_upgrade" style="--x:2; --y:2;" onclick="egg_upgrade_buying(13)"><p class="anname">Gln</p><p class="egg_upgrade_des"></p></div>
+                <div id="ep14" class="egg_upgrade" style="--x:3; --y:2;" onclick="egg_upgrade_buying(14)"><p class="anname">Met</p><p class="egg_upgrade_des"></p></div>
+                <div id="ep15" class="egg_upgrade" style="--x:4; --y:2;" onclick="egg_upgrade_buying(15)"><p class="anname">Ser</p><p class="egg_upgrade_des"></p></div>
+                <div id="ep16" class="egg_upgrade" style="--x:0; --y:3;" onclick="egg_upgrade_buying(16)"><p class="anname">Thr</p><p class="egg_upgrade_des"></p></div>
+                <div id="ep17" class="egg_upgrade" style="--x:1; --y:3;" onclick="egg_upgrade_buying(17)"><p class="anname">Cys</p><p class="egg_upgrade_des"></p></div>
+                <div id="ep18" class="egg_upgrade" style="--x:2; --y:3;" onclick="egg_upgrade_buying(18)"><p class="anname">Pro</p><p class="egg_upgrade_des"></p></div>
+                <div id="ep19" class="egg_upgrade" style="--x:3; --y:3;" onclick="egg_upgrade_buying(19)"><p class="anname">His</p><p class="egg_upgrade_des"></p></div>
+                <div id="ep20" class="egg_upgrade" style="--x:4; --y:3;" onclick="egg_upgrade_buying(20)"><p class="anname">Arg</p><p class="egg_upgrade_des"></p></div>
+
+            </div>    
+        </div>
+        <div id="rotate_egg">
+            <div id="rotate_show">
+
+            </div>
+            <div id="rotate_img"></div>
+            <div id="rotate_re" onclick="rotate_re()"></div>
+            <div id="rotate_milestone">
+                <p style="color: white;margin: 10px;position: absolute; left: 70px;">旋转煎蛋里程碑</p>
+                <div id="rotate_0" class="rotate_mile" style="top:40px;">优化煎蛋尺寸获取，需求：1旋转煎蛋</div>
+                <div id="rotate_1" class="rotate_mile" style="top:70px;">降低煎蛋机费用，需求：1e3旋转煎蛋</div>
+                <div id="rotate_2" class="rotate_mile" style="top:100px;">优化煎蛋尺寸的获取公式，需求：1e4旋转煎蛋</div>
+                <div id="rotate_3" class="rotate_mile" style="top:150px;">自动获取旋转煎蛋，需求：1e6旋转煎蛋</div>
+                <div id="rotate_4" class="rotate_mile" style="top:200px;">使煎蛋尺寸上限变为软上限，需求：1e8旋转煎蛋</div>
+            </div>
+        </div>
+    </div>
+    <div id="scene2" class="scene">2</div>
+    <div id="scene3" class="scene">3</div>
+    <div id="scene4" class="scene">4</div>
+    <div id="scene5" class="scene">5</div>
+</body>
+<script>
+    function openn(){
+        let u=document.getElementById("openn");
+        u.style.display="none";
+    }
+    function scene_change(l)
+    {
+        let u=document.getElementsByClassName("scene");
+        for(let i=0;i<u.length;i++)
+            u[i].style.display="none";
+        document.getElementById("scene"+l).style.display="block";
+    }
+</script>
+<script src="game.js"></script>
+</html>

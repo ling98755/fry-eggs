@@ -1,0 +1,219 @@
+body{
+    background-color: rgb(46, 46, 46);
+    height: 100%;
+    width: 100%;
+}
+#openn{
+    background-color: rgb(46, 46, 46);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 10000;
+}
+#openn1{
+    position: relative;
+    color: rgb(169, 154, 58);
+    left: calc(50% - 200px);
+    font-size: 100px;
+    top: calc(20% - 100px);
+}
+#floor{
+    position: absolute;
+    top: 40px;
+    height: 60px;
+    left: 30px;
+    border: 30px;
+    width: calc(100% - 60px);
+}
+.flor{
+    background-color: rgb(230, 243, 172);
+    position: absolute;
+    height: 40px;
+    margin: 10px;
+    top: 0;
+    left: calc(calc(var(--i) * 180px) + 60px);
+    width: 150px;
+    border: 3px saddlebrown solid;
+    border-radius: 100px;
+    box-shadow: 10px 10px 10px 0;
+}
+.flor:hover{
+    background-color: rgb(235, 244, 195);
+}.flor:active{
+    background-color: rgb(240, 247, 212);
+}
+.fp{
+    position: absolute;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-size: 20px;
+    left: calc(50% - calc(var(--i)* 10px));
+    top: calc(50% - 16px);
+}
+#egg_show{
+    position: absolute;
+    top: 130px;
+    left: 140px;
+    font-size: 30px;
+    color: #ffffff;
+}
+.scene{
+    position: absolute;
+    top: 180px;
+    height: calc(100% - 120px);
+    width: 100%;
+    display: none;
+}
+#egg_erea{
+    width: 600px;
+    height: 500px;
+    border: 1px black solid;
+}
+#egg_maker{
+    position: relative;
+    left: 40px;
+    width: calc(100% - 80px);
+    height: 40px;
+    top: 20px;
+}
+#egg_maker_show{
+    color: #d8d8d8;
+    font-size: 15px;
+}
+#egg_maker_buy{
+    position:absolute;
+    width: 40px;
+    height: 25px;
+    background-color: #ffffff;
+    right: 70px;
+    top: 0;
+    border-radius: 10px;
+}
+#egg_maker_buy:hover{
+    background-color: #e1dede;
+}
+#egg_maker_autobuyer{
+
+}
+#egg_boost{
+    position: relative;
+    left: 40px;
+    width: calc(100% - 80px);
+    height: 40px;
+    top: 20px;
+}
+#egg_boost_show{
+    color: #d8d8d8;
+    font-size: 15px;
+}
+#egg_boost_buy{
+    position:absolute;
+    width: 40px;
+    height: 25px;
+    background-color: #ffffff;
+    right: 70px;
+    top: 0;
+    border-radius: 10px;
+}
+#egg_boost_buy:hover{
+    background-color: #e1dede;
+}
+#egg_boost_autobuyer{
+
+}
+#egg_upgrade{
+    position: absolute;
+    top: 140px;
+    width: 520px;
+    height: 200px;
+    left: 50px;
+   
+    
+}
+.egg_upgrade{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: calc(var(--x) * 50px);
+    top: calc(var(--y) * 50px);
+    border: 1px #e1dede solid;
+
+    overflow: hidden;
+}
+.anname{
+    margin: 0;border: 0;padding: 0;
+    position: absolute;
+    font-size: 25px;
+    color: #ffffff;
+    top: calc(50% - 20px);
+    left: calc(50% - 20px);
+}
+.egg_upgrade:hover{
+    width: 300px;
+    height: 200px;
+    background-color: rgb(174, 180, 180);
+    z-index: 1;
+    transition: all 300ms;
+}
+.egg_upgrade:hover .anname{
+    top: 0;
+    left: 0;
+    transition: all 300ms;
+    font-size: 20px;
+}
+#nnnnname{
+    color: #ffffff;
+    margin-left: 140px;
+}
+.egg_upgrade_des{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.egg_upgrade:hover .egg_upgrade_des{
+    top: 30px;
+    left: 0;
+    transition: all 300ms;
+    font-size: 20px;
+}
+#rotate_egg{
+    position: absolute;
+    left: 0px;
+    top: 520px;
+    width: 600px;
+    height: 300px;
+    display: none;
+    border: 1px solid black;
+}
+#rotate_show{
+    width: 300px;
+    color: #ffffff;
+}
+#rotate_re{
+    position: absolute;
+    bottom: 10px;
+    width: 250px;
+    height: 40px;
+    background-color: white;
+    color: #000000;
+    border-radius: 10px;
+}
+#rotate_re:hover{
+    background-color: #d8d8d8;
+}
+#rotate_milestone{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 0;
+    right: 0;
+}
+.rotate_mile{
+    color: #ffffff;
+    position: absolute;
+}
