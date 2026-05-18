@@ -259,7 +259,7 @@ setInterval(() => {
   }
   ept =
     egg_maker *
-    (1n + 2n * egg_boost * ctoB(egg_ene[3])) *
+    (1n + 2n * egg_boost * (ctoB(egg_ene[3])+1n)) *
     up_legg ** legg_maker *
     2n *
     (egg_size / size_up + 1n) *
