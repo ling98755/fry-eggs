@@ -54,7 +54,7 @@ body{
 #egg_show{
     position: absolute;
     top: 130px;
-    left: 140px;
+    left: 13%;
     font-size: 30px;
     color: #ffffff;
 }
@@ -186,7 +186,7 @@ body{
     left: 0px;
     top: 520px;
     width: 600px;
-    height: 300px;
+    height: 350px;
     display: none;
     border: 1px solid black;
 }
@@ -196,12 +196,13 @@ body{
 }
 #rotate_re{
     position: absolute;
-    bottom: 10px;
+    bottom: 60px;
     width: 250px;
     height: 40px;
+    left: 10px;
     background-color: white;
     color: #000000;
-    border-radius: 10px;
+    border-radius: 12px;
 }
 #rotate_re:hover{
     background-color: #d8d8d8;
@@ -216,4 +217,78 @@ body{
 .rotate_mile{
     color: #ffffff;
     position: absolute;
+}
+#egg_pmm{
+    border: 1px solid black;
+    width: 600px;
+    height: 500px;
+    position: absolute;
+    top:880px;
+    display: none;
+}
+#set_b{
+    top: 100px;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #cfd4b6a8;
+    position: fixed;
+    border-radius: 50px;
+    box-shadow: 10px 10px 10px 0;
+    display: none;
+}
+#rotate_img
+{
+    width: 170px;
+
+    animation-name: rotate_egg;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes rotate_egg{
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+#egg_pmm_show{
+    width: 300px;
+    color: #ffffff;
+}
+#egg_pmm_re{
+    
+    border-radius: 12px;
+    width: 350px;
+    height: 40px;
+    background-color: white;
+    position: absolute;
+    bottom: 60px;
+    left: 10px;
+}
+.egg_pmm_say
+{
+    position: absolute;
+    color: white;
+    margin: 5px;
+    z-index: 11;
+}
+.egg_pmm_upgrade
+{
+    width: 500px;
+    height:40px;
+    border: solid 1px white;
+    margin: 5px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.green{
+    width: 500px;
+    position: relative;
+    height: 60px;
+    border-radius: 15px;
+    background-color: rgb(31, 50, 31);
+    top: 0;
+    left:-500px;
+    color: rgb(57, 61, 117);
 }

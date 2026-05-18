@@ -7,7 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="openn" onclick="openn()">
+    <div id="set_b"></div>
+    <div id="set">
+
+    </div>
+    <div id="openn" onclick="openn()" style="display: none;">
         <P id="openn1">煎蛋增量</P> 
     </div>
     <div id="floor">
@@ -30,32 +34,32 @@
             <div id="egg_upgrade">
                 <div id="ep1" class="egg_upgrade" style="--x:0; --y:0;" onclick="egg_upgrade_buying(1)"><p class="anname">Gly</p><p id="gly" class="egg_upgrade_des"></p></div>
                 <div id="ep2" class="egg_upgrade" style="--x:1; --y:0;" onclick="egg_upgrade_buying(2)"><p class="anname">Ala</p><p id="ala" class="egg_upgrade_des"></p></div>
-                <div id="ep3" class="egg_upgrade" style="--x:2; --y:0;" onclick="egg_upgrade_buying(3)"><p class="anname">Val</p><p class="egg_upgrade_des"></p></div>
-                <div id="ep4" class="egg_upgrade" style="--x:3; --y:0;" onclick="egg_upgrade_buying(4)"><p class="anname">Leu</p><p class="egg_upgrade_des"></p></div>
-                <div id="ep5" class="egg_upgrade" style="--x:4; --y:0;" onclick="egg_upgrade_buying(5)"><p class="anname">Ile</p><p class="egg_upgrade_des"></p></div>
-                <div id="ep6" class="egg_upgrade" style="--x:0; --y:1;" onclick="egg_upgrade_buying(6)"><p class="anname">Phe</p><p class="egg_upgrade_des"></p></div>
-                <div id="ep7" class="egg_upgrade" style="--x:1; --y:1;" onclick="egg_upgrade_buying(7)"><p class="anname">Trp</p><p class="egg_upgrade_des"></p></div>
-                <div id="ep8" class="egg_upgrade" style="--x:2; --y:1;" onclick="egg_upgrade_buying(8)"><p class="anname">Tyr</p><p class="egg_upgrade_des"></p></div>
-                <div id="ep9" class="egg_upgrade" style="--x:3; --y:1;" onclick="egg_upgrade_buying(9)"><p class="anname">Asp</p><p class="egg_upgrade_des"></p></div>
-                <div id="ep10" class="egg_upgrade" style="--x:4; --y:1;" onclick="egg_upgrade_buying(10)"><p class="anname">Asn</p><p class="egg_upgrade_des"></p></div>
-                <div id="ep11" class="egg_upgrade" style="--x:0; --y:2;" onclick="egg_upgrade_buying(11)"><p class="anname">Glu</p><p class="egg_upgrade_des"></p></div>
-                <div id="ep12" class="egg_upgrade" style="--x:1; --y:2;" onclick="egg_upgrade_buying(12)"><p class="anname">Lys</p><p class="egg_upgrade_des"></p></div>
-                <div id="ep13" class="egg_upgrade" style="--x:2; --y:2;" onclick="egg_upgrade_buying(13)"><p class="anname">Gln</p><p class="egg_upgrade_des"></p></div>
-                <div id="ep14" class="egg_upgrade" style="--x:3; --y:2;" onclick="egg_upgrade_buying(14)"><p class="anname">Met</p><p class="egg_upgrade_des"></p></div>
-                <div id="ep15" class="egg_upgrade" style="--x:4; --y:2;" onclick="egg_upgrade_buying(15)"><p class="anname">Ser</p><p class="egg_upgrade_des"></p></div>
-                <div id="ep16" class="egg_upgrade" style="--x:0; --y:3;" onclick="egg_upgrade_buying(16)"><p class="anname">Thr</p><p class="egg_upgrade_des"></p></div>
-                <div id="ep17" class="egg_upgrade" style="--x:1; --y:3;" onclick="egg_upgrade_buying(17)"><p class="anname">Cys</p><p class="egg_upgrade_des"></p></div>
-                <div id="ep18" class="egg_upgrade" style="--x:2; --y:3;" onclick="egg_upgrade_buying(18)"><p class="anname">Pro</p><p class="egg_upgrade_des"></p></div>
-                <div id="ep19" class="egg_upgrade" style="--x:3; --y:3;" onclick="egg_upgrade_buying(19)"><p class="anname">His</p><p class="egg_upgrade_des"></p></div>
-                <div id="ep20" class="egg_upgrade" style="--x:4; --y:3;" onclick="egg_upgrade_buying(20)"><p class="anname">Arg</p><p class="egg_upgrade_des"></p></div>
+                <div id="ep3" class="egg_upgrade" style="--x:2; --y:0;" onclick="egg_upgrade_buying(3)"><p class="anname">Val</p><p id="val" class="egg_upgrade_des"></p></div>
+                <div id="ep4" class="egg_upgrade" style="--x:3; --y:0;" onclick="egg_upgrade_buying(4)"><p class="anname">Leu</p><p id="leu" class="egg_upgrade_des"></p></div>
+                <div id="ep5" class="egg_upgrade" style="--x:4; --y:0;" onclick="egg_upgrade_buying(5)"><p class="anname">Ile</p><p id="ile" class="egg_upgrade_des"></p></div>
+                <div id="ep6" class="egg_upgrade" style="--x:0; --y:1;" onclick="egg_upgrade_buying(6)"><p class="anname">Phe</p><p id="phe" class="egg_upgrade_des"></p></div>
+                <div id="ep7" class="egg_upgrade" style="--x:1; --y:1;" onclick="egg_upgrade_buying(7)"><p class="anname">Trp</p><p id="trp" class="egg_upgrade_des"></p></div>
+                <div id="ep8" class="egg_upgrade" style="--x:2; --y:1;" onclick="egg_upgrade_buying(8)"><p class="anname">Tyr</p><p id="tyr" class="egg_upgrade_des"></p></div>
+                <div id="ep9" class="egg_upgrade" style="--x:3; --y:1;" onclick="egg_upgrade_buying(9)"><p class="anname">Asp</p><p id="asp" class="egg_upgrade_des"></p></div>
+                <div id="ep10" class="egg_upgrade" style="--x:4; --y:1;" onclick="egg_upgrade_buying(10)"><p class="anname">Asn</p><p id="asn" class="egg_upgrade_des"></p></div>
+                <div id="ep11" class="egg_upgrade" style="--x:0; --y:2;" onclick="egg_upgrade_buying(11)"><p class="anname">Glu</p><p id="glu" class="egg_upgrade_des"></p></div>
+                <div id="ep12" class="egg_upgrade" style="--x:1; --y:2;" onclick="egg_upgrade_buying(12)"><p class="anname">Lys</p><p id="lys" class="egg_upgrade_des"></p></div>
+                <div id="ep13" class="egg_upgrade" style="--x:2; --y:2;" onclick="egg_upgrade_buying(13)"><p class="anname">Gln</p><p id="gln" class="egg_upgrade_des"></p></div>
+                <div id="ep14" class="egg_upgrade" style="--x:3; --y:2;" onclick="egg_upgrade_buying(14)"><p class="anname">Met</p><p id="met" class="egg_upgrade_des"></p></div>
+                <div id="ep15" class="egg_upgrade" style="--x:4; --y:2;" onclick="egg_upgrade_buying(15)"><p class="anname">Ser</p><p id="ser" class="egg_upgrade_des"></p></div>
+                <div id="ep16" class="egg_upgrade" style="--x:0; --y:3;" onclick="egg_upgrade_buying(16)"><p class="anname">Thr</p><p id="thr" class="egg_upgrade_des"></p></div>
+                <div id="ep17" class="egg_upgrade" style="--x:1; --y:3;" onclick="egg_upgrade_buying(17)"><p class="anname">Cys</p><p id="cys" class="egg_upgrade_des"></p></div>
+                <div id="ep18" class="egg_upgrade" style="--x:2; --y:3;" onclick="egg_upgrade_buying(18)"><p class="anname">Pro</p><p id="pro" class="egg_upgrade_des"></p></div>
+                <div id="ep19" class="egg_upgrade" style="--x:3; --y:3;" onclick="egg_upgrade_buying(19)"><p class="anname">His</p><p id="his" class="egg_upgrade_des"></p></div>
+                <div id="ep20" class="egg_upgrade" style="--x:4; --y:3;" onclick="egg_upgrade_buying(20)"><p class="anname">Arg</p><p id="arg" class="egg_upgrade_des"></p></div>
 
-            </div>    
+            </div> 
+            <p style="color: rgb(250, 157, 157);top: 450px;position: absolute;">一切，从那最初的煎蛋不慎掉入锅中开始</p>   
         </div>
         <div id="rotate_egg">
             <div id="rotate_show">
-
             </div>
-            <div id="rotate_img"></div>
+            <div id="rotate_img"><img style="width: 130px; margin:20px;" src="2.jpg"></div>
             <div id="rotate_re" onclick="rotate_re()"></div>
             <div id="rotate_milestone">
                 <p style="color: white;margin: 10px;position: absolute; left: 70px;">旋转煎蛋里程碑</p>
@@ -65,6 +69,17 @@
                 <div id="rotate_3" class="rotate_mile" style="top:150px;">自动获取旋转煎蛋，需求：1e6旋转煎蛋</div>
                 <div id="rotate_4" class="rotate_mile" style="top:200px;">使煎蛋尺寸上限变为软上限，需求：1e8旋转煎蛋</div>
             </div>
+            <p style="color: rgb(233, 212, 159);bottom: 10px;position: absolute;">这些煎蛋喜欢旋转，他们一开始旋转就停不下来</p>
+        </div>
+        <div id="egg_pmm">
+            <div id="egg_pmm_show"></div>
+            <div class="egg_pmm_upgrade" onclick="ene(1)"><div id="egg_pmm_say1" class="egg_pmm_say"></div><div class="green" id="green1"></div></div>
+            <div class="egg_pmm_upgrade" onclick="ene(2)"><div id="egg_pmm_say2" class="egg_pmm_say"></div><div class="green" id="green2"></div></div>
+            <div class="egg_pmm_upgrade" onclick="ene(3)"><div id="egg_pmm_say3" class="egg_pmm_say"></div><div class="green" id="green3"></div></div>
+            <div class="egg_pmm_upgrade" onclick="ene(4)"><div id="egg_pmm_say4" class="egg_pmm_say"></div><div class="green" id="green4"></div></div>
+            <div class="egg_pmm_upgrade" onclick="ene(5)"><div id="egg_pmm_say5" class="egg_pmm_say"></div><div class="green" id="green5"></div></div>
+            <div id="egg_pmm_re" onclick="egg_pmm_re()"></div>
+            <p style="color: rgb(197, 233, 159);bottom: 10px;position: absolute;">把两个会旋转的煎蛋绑在一起，这就是永动机的雏形</p>
         </div>
     </div>
     <div id="scene2" class="scene">2</div>
