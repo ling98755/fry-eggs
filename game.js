@@ -445,3 +445,35 @@ function egg_pmm_re() {
 function ene(u) {
   if (egg_enene != 6) egg_enene = u;
 }
+function clean()
+{
+  localStorage.clear();
+  ((egg = 500n),
+    (ept = 0n),
+    (timee = 0n),
+    (eegg = 0n),
+    (up_legg = 2n),
+    (egg_maker = 0n),
+    (legg_maker = 0n),
+    (egg_boost = 0n),
+    (egg_size = 1n),
+    (size_up = 2000n),
+    (egg_up = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]),
+    (egg_ene = [0, 0, 0, 0, 0]),
+    (egg_enen = [0, 0, 0, 0, 0]),
+    (egg_enene = 0),
+    (mm1 = 0),
+    (mm2 = 0),
+    (reduce_egg_maker = 10000n),
+    (egg_pmm = 0),
+    (egg_upfee = [
+      0,
+      10000n,
+      2000000n,
+      200000000n,
+      10n ** 9n * 5n,
+      10n ** 12n * 5n,
+    ]),
+    (rotate_egg = 0n),
+    (rotate_mile = [0, 0, 0, 0, 0]));
+}
