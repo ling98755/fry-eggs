@@ -122,7 +122,6 @@ function tt() {
   egg_ene = JSON.parse(localStorage.egg_ene);
   egg_enen = JSON.parse(localStorage.egg_enen);
   rotate_egg = read(localStorage.rotate_egg);
-  rotate_mile = JSON.parse(localStorage.rotate_mile);
   egg_enene = JSON.parse(localStorage.egg_enene);
 }
 if (localStorage.length > 0) tt();
@@ -244,7 +243,6 @@ setInterval(() => {
   localStorage.egg_ene = JSON.stringify(egg_ene);
   localStorage.egg_enen = JSON.stringify(egg_enen);
   localStorage.rotate_egg = stringify(rotate_egg);
-  localStorage.rotate_mile = JSON.stringify(rotate_mile);
   localStorage.egg_enene = JSON.stringify(egg_enene);
 }, 3000);
 //显示
@@ -371,7 +369,7 @@ setInterval(() => {
   else u.style.color = "white";
   u.innerText =
     "使功率提升" +
-    3 ** egg_ene[2] +
+ (1+egg_ene[2]) +
     "倍" +
     "," +
     (egg_ene[2] + 1) +
